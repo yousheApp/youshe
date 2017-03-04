@@ -1,0 +1,154 @@
+*{
+	box-sizing: border-box;
+}
+
+// 定义函数
+
+.bg(@w){
+	background-color:@w;
+}
+
+// head样式
+
+.head{
+	widith:100%;
+	height:.88rem;
+	.bg(#2B3139);
+	padding:.26rem .5rem 0;
+	position:relative;
+	.self{
+		width:.35rem;
+		height:.4rem;
+		margin-top:-.02rem;
+		float:left;
+		background:url(../imgs/ly-icon.png)no-repeat top left/cover;
+	}
+	.logo{
+		width:1.4rem;
+		height:.35rem;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+		background:url(../imgs/ly-logo.png)no-repeat center center/cover;
+	}
+	.more{
+		width:.35rem;
+		height:.35rem;
+		float:right;
+		background:url(../imgs/ly-icon.png)no-repeat top right/cover;
+	}
+}
+
+// head结束
+// nav 开始
+.nav-box{
+	width:100%;
+	height:.89rem;
+	.bg(#22272E);
+}
+// nav结束
+// 
+// 侧栏制作开始
+.left-box{
+	position:absolute;
+	top:0;left:-6.3rem;
+	width:5.66rem;
+	height:100%;
+	z-index:99;
+	box-shadow:.15rem 0  25px .1rem rgba(0, 0, 0, 0.2);
+	background:#fff url(../imgs/ly-bg.png)no-repeat top center/100%;
+	background-position-y:-1rem;
+	transition:left .5s;
+	.portrait{
+		width:1.51rem;
+		height:1.51rem;
+		border-radius: 50%;
+		position:absolute;
+		left:50%;
+		margin-left:-.75rem;
+		top:1.14rem;
+		border:1px solid #fff;
+	}
+	.name{
+		font-size:.24rem;
+		color:#fff;
+		position:absolute;
+		top:2.8rem;
+		left:50%;
+		transform:translate(-50%);
+	}
+	.item-box{
+		width:100%;
+		position:absolute;
+		top:4rem;
+		.item{
+			width:100%;
+			height:.99rem;
+			text-align: center;
+			line-height:.55rem;
+			border-bottom: 2px solid #E7E7E7;
+			position:relative;
+			.icon{
+				background:#000;
+				position:absolute;
+				top:.28rem;
+				left:.69rem;
+			}
+			.item-name{
+				font-size:.34rem;
+				color:#1D252D;
+			}
+		}
+		.item:nth-of-type(1){
+			.icon{
+				width:.4rem;
+				height:.35rem;
+				background:url(../imgs/ly-copy.png)no-repeat center center/100%;
+			}
+		}	
+		.item:nth-of-type(2){
+			.icon{
+				width:.43rem;
+				height:.43rem;
+				background:url(../imgs/ly-aboutus.png)no-repeat center center/100%;
+			}
+		}	
+		.item:nth-of-type(3){
+			.icon{
+				width:.4rem;
+				height:.37rem;
+				background:url(../imgs/ly-yj.png)no-repeat center center/100%;
+			}
+		}	
+		.item:nth-of-type(4){
+			.icon{
+				width:.43rem;
+				height:.43rem;
+				background:url(../imgs/ly-sj.png)no-repeat center center/100%;
+			}
+		}	
+	}
+	.out{
+		width:3.3rem;
+		height:.73rem;
+		position:absolute;
+		bottom:1.56rem;
+		left:50%;
+		transform:translate(-50%);
+		background:url(../imgs/ly-tc.png)no-repeat center center/100%;
+	}
+}
+// 侧栏制作结束
+// 遮罩开始
+.mask{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:2;
+	display: none;
+	// background-color:rgba(0,0,0,.1);
+}
+// 遮罩结束
