@@ -47,7 +47,6 @@
   box-shadow: 0.15rem 0 25px 0.1rem rgba(0, 0, 0, 0.2);
   background: #ffffff url(../imgs/ly-bg.png) no-repeat top center / 100%;
   background-position-y: -1rem;
-  transition: left .5s;
 }
 .left-box .portrait {
   width: 1.51rem;
