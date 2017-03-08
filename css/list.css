@@ -1,0 +1,196 @@
+@import url(base.css);
+html,body{
+	height:100%;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.yy_head{
+	width: 100%;
+	height: 0.88rem;
+	background-color: #2B3139;
+	padding:0 0.5rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	overflow: hidden;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.yy_head img{
+	height:0.35rem;
+}
+.yy_head a{
+	font-size: 0;
+}
+.yy_head span{
+	font-size: 16px;
+	color:#DBD87B;
+}
+.yy_bac a{
+	display: block;
+}
+.yy_box{
+	position: relative;
+	width:100%;
+	overflow: auto;
+    flex-grow: 1;
+}
+.yy_cover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	display: none;
+	opacity: 0;
+}
+.yy_cover .yy_center{
+	width: 5.36rem;
+	height: 5.36rem;
+	background: #6A6969;
+	left: 1.07rem;
+	top: 3rem;
+	position: absolute;
+	z-index: 99;
+}
+.yy_cover .yy_center .yy_wenzhang{
+	width: 2.64rem;
+	height: 2.64rem;
+	position: absolute;
+	left: -1rem;
+	top: -1rem;
+}
+.yy_cover .yy_center .yy_wenzhang img{
+	width: 2.64rem;
+}
+.yy_cover .yy_center .yy_zuopin{
+	width: 2.64rem;
+	height: 2.64rem;
+	position: absolute;
+	top:-1rem;
+	left: 3.72rem;
+}
+.yy_cover .yy_center .yy_zuopin img{
+	width: 2.64rem;
+}
+.yy_cover .yy_center .yy_dongxiao{
+	width: 2.64rem;
+	height: 2.64rem;
+	position: absolute;
+	left: -1rem;
+	top: 3.72rem;
+}
+.yy_cover .yy_center .yy_dongxiao img{
+	width: 2.64rem;
+}
+.yy_cover .yy_center .yy_jiaocheng{
+	width: 2.64rem;
+	height: 2.64rem;
+	position: absolute;
+	top: 3.72rem;
+	left: 3.72rem;
+}
+.yy_cover .yy_center .yy_jiaocheng img{
+	width: 2.64rem;
+}
+.yy_nav{
+	width: 100%;
+	height: .88rem;
+	background-color: #1F1F22;
+	overflow: hidden;
+}
+.yy_nav .link-box{
+	width:auto;
+	height:0.88rem;
+	padding:0 0.2rem;
+}
+.yy_nav .link-box a{
+	font-size:12px;
+	color: #7D94A8;
+	display: block;
+	text-align: center;
+	width:1.22rem;
+	height: .88rem;
+	line-height: .88rem;
+	float: left;
+}
+.yy_nav span{
+	font-size: 12px;
+	color: #373C42;
+	float: left;
+	line-height: 0.88rem;
+}
+section.yy_list{
+	width:100%;
+	height:auto;
+	box-sizing:border-box;
+	padding:0.24rem;
+}
+section.yy_list ul{
+	width:100%;
+	height:auto;
+}
+section.yy_list ul li{
+	width:100%;
+	height:4.43rem;
+	margin-bottom:0.24rem;
+}
+section.yy_list ul li .img-box{
+	display: block;
+	width:100%;
+	height:3.13rem;
+	overflow: hidden;
+}
+section.yy_list ul li .img-box img{
+	width:100%;
+}
+section.yy_list ul li .content{
+	width:100%;
+	height: 1.1rem;
+	box-sizing:border-box;
+	padding:0.16rem;
+}
+section.yy_list ul li .content .left{
+	width:auto;
+	height:100%;
+	font-size: 12px;
+	color:#555;
+	float: left;
+	margin-right:0.03rem;
+}
+section.yy_list ul li .content .left p:nth-of-type(1){
+	font-size: 16px;
+	color:#333;
+}
+section.yy_list ul li .content .center{
+	display: block;
+	width:4.3rem;
+	height:100%;
+    font-size: 14px;
+    color:#555;
+    float: left;
+}
+section.yy_list ul li .content .center p{
+	margin:0.05rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+section.yy_list ul li .content .right{
+   float: right;
+   width:auto;
+   height:100%;
+   font-size: 12px;
+   color:#555;
+}
+section.yy_list ul li .content .right p{
+	margin:0.05rem 0;
+}
+section.yy_list ul li .content .right img{
+	height:12px;
+}

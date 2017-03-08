@@ -2,73 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <title>lgoin</title>
-    <link rel="stylesheet" href="css/base.css">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
 	<link rel="stylesheet" href="css/lgoin.css">
+	<script src="js/rem.js"></script>
 </head>
 <body>
-	<div class="lt-box">
-		<!-- 返回上一层 -->
-		<a href="javascript:;" class="lt-left"></a>
-		<!-- logo -->
-		<div class="lt-imgbox">
+	<div class="lhl-bg"></div>
+	<div class="lhl-box">
+		<div class="lhl-back"></div>
+		<div class="lhl-logobox">
 			<img src="images/logo.png" alt="">
-			<p>Welcome</p>
 		</div>
-		<form action="">
-			<!-- lgoin -->
-			<div class="lt-inputbox">
-				<img src="images/lt-our.png" alt="" >
-				<input type="text" placeholder="请输入账号">
-			</div>
-
-			<!-- password -->
-			<div class="lt-inputbox">
-				<img src="images/lt-pwd.png" alt="">
-				<input type="text" placeholder="请输入密码">
-			</div>
-
-			<!-- sumbit -->
-			<input type="text" value="登录" class="sumbit">
-		</form>
-		<!--忘记密码-->
-		<div class="lt-links">
-			<a href="">注册账号</a>
-			<a href="">忘记密码</a>
+		<span class="lhl-hy">Welcome</span>
+		<div class="lhl-biaodan">
+			<form action="">
+				<div class="lhl-inputbox">
+					<i class="lhl-inputimg" style="background-image: url('images/lt-our.png')"></i>
+					<input type="text"placeholder="请输入手机号码" class="lhl-input1">
+				</div>
+				<div class="lhl-inputbox">
+					<i class="lhl-inputimg" style="background-image: url('images/lhl-pass.png')"></i>
+					<input type="text"placeholder="请设置您的密码" class="lhl-input2">
+				</div>
+				<input type="submit" value="登录" id="register">
+			</form>
 		</div>
-		<!--第三方登录-->
-		<div class="lt-line">
-			<div class="line"></div>
-			<div class="con">
-				<span>第三方账号登录</span>
-			</div>
-			<div class="line"></div>
-		</div>
-		<ul class="three-lgoin">
-			<li>
-				<a href="">
-					<img src="images/lt-qq.png" alt="">
-					<span>QQ</span>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/lt-wx.png" alt="">
-					<span>微信</span>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/lt-wb.png" alt="">
-					<span>微博</span>
-				</a>
-			</li>
+		
 
-		</ul>
 	</div>
-	<script src="js/rem.js"></script>
 </body>
 </html>

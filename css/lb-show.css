@@ -1,3 +1,16 @@
+html,body{
+  height:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+section.main{
+    width:100%;
+    overflow: auto;
+    flex-grow: 1;
+}
 /*header*/
 .lb-header{
     width: 100%;
@@ -11,6 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 .lb-header span{
     width: 0.86rem;
