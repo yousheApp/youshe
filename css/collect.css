@@ -68,16 +68,13 @@ section.main{
 	width: 7rem;
 	height: auto;
 	margin: 0.24rem auto;
+  position: relative;
 }
 .zwb-dk li{
   width:3.4rem;
   height:auto;
   float: left;
-  margin-right:0.2rem;
-  margin-bottom:0.2rem;
-}
-.zwb-dk li:nth-child(2n){
-  margin-right:0;
+  position: absolute;
 }
 .zwb-dk li .wb-imgbox{
   width:100%;
