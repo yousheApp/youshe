@@ -32,17 +32,21 @@ section.main{
     width: 0.86rem;
     display: block;
     position: absolute;
-    top:0;
+        top: .05rem;
 }
 .lb-header .lb-header-left{
-    left: 0;
+    left: .3rem;
 }
-.lb-header .lb-header-left img{
+.lb-header .lb-header-left a{
+    width: 0.21rem;
+    height: 0.4rem;
+}
+.lb-header .lb-header-left a img{
     width: 0.21rem;
     height: 0.4rem;
 }
 .lb-header .lb-header-right{
-    right: 0;
+    right: .3rem;
 }
 .lb-header .lb-header-right img{
     width: 0.32rem;
