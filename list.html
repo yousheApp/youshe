@@ -2,53 +2,53 @@
 <html ng-app="yyapp">
 <head>
 	<meta charset="UTF-8">
-	<title>右设_yy</title>
+	
 	<meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>右设_yy</title>
+    <script src="js/rem.js"></script>
     <link rel="stylesheet" href="css/list.css">
 </head>
 <body>
-   <!-- 遮罩制作开始 -->
-<div class="mask"></div>
+    <!-- 遮罩制作开始 -->
+    <div class="mask"></div>
+    <!-- 侧栏制作开始 -->
+    <section class="left-box">
+        <div class="portrait" style="background:url(images/ly-tx.jpg)no-repeat center center/100%;"></div>
+        <span class="name">Aurelien</span>
+        <ul class="item-box">
+            <li class="item">
+                <div class="icon"></div>
+                <a href="" class="item-name">我的收藏</a>
+            </li>
+            <li class="item">
+                <div class="icon"></div>
+                <a href="" class="item-name">关于我们</a>
+            </li>
+            <li class="item">
+                <div class="icon"></div>
+                <a href="" class="item-name">意见反馈</a>
+            </li>
+            <li class="item">
+                <div class="icon"></div>
+                <a href="" class="item-name">版本更新</a>
+            </li>
+        </ul>
+        <div class="out"></div>
+    </section>
+    <!-- 侧栏制作结束 -->
     <!-- 头部 -->
-    <header class="yy_head">
-        <a href="javascript:;" class="yy_person">
-            <img src="images/yy_person.png" alt="">
-        </a>   
-        <span>右设</span>
-        <a href="javascript:;" class="yy_sort">
-            <img src="images/yy_sort.png" alt="">
-        </a>   
-    </header>
-    <!-- 头部结束 -->
-    <!-- 列表 -->
-    <div class="yy_box">
-        <!-- 效果 -->
-        <div class="yy_cover">
-             <div class="yy_center">
-                <div class="yy_wenzhang">
-                    <a href="">
-                        <img src="images/yy_effect_01.png" alt="">
-                    </a>
-                </div>
-                <div class="yy_zuopin">
-                    <a href="">
-                        <img src="images/yy_effect_02.png" alt="">
-                    </a>
-                </div>
-                <div class="yy_dongxiao">
-                    <a href="">
-                        <img src="images/yy_effect_03.png" alt="">
-                    </a>
-                </div>
-                <div class="yy_jiaocheng">
-                    <a href="">
-                        <img src="images/yy_effect_04.png" alt="">
-                    </a>
-                </div>
-             </div>
-        </div>
+    <section class="head">
+        <header>
+            <a href="javascript:;" class="self">
+                <img src="images/yy_person.png" alt="">
+            </a>   
+            <span>右设</span>
+            <a href="javascript:;" class="yy_sort">
+                <img src="images/yy_sort.png" alt="">
+            </a>   
+        </header>
         <!-- 选项 -->
         <div class="yy_nav">
             <div class="link-box">
@@ -63,6 +63,10 @@
                 <a href="">音乐</a>
             </div>
         </div>
+    </section>
+    <!-- 头部结束 -->
+    <!-- 列表 -->
+    <div class="yy_box">
         <!-- 内容列表 -->
         <section class="yy_list">
             <ul>
@@ -157,8 +161,15 @@
         </section>
     </div>
     <!-- 列表结束 -->
+    <!--footer-->
+    <div class="lb-footer">
+        <div class="lb-footer-con">
+            <span class="lb-footer-hover"><a href="javascript:;">WEB</a></span>
+            <span><a href="javascript:;">APP</a></span>
+            <span><a href="javascript:;">iWatch</a></span>
+        </div>
+    </div>
+<!--footer结束-->
 </body>
-<script src="js/rem.js"></script>
-<script src="js/animate.js"></script>
-<script src="js/list.js"></script>
+<script src="js/sideslip.js"></script>
 </html>

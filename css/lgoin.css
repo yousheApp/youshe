@@ -102,8 +102,8 @@
 
 .lhl-back{
     position: fixed;
-    top: .62rem;
-    left:.38rem;
+    top: .4rem;
+    left:.5rem;
     width:.24rem;
     height:.44rem;
     background-image: url("../images/lhl-left.png");
