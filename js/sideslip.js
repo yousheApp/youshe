@@ -25,11 +25,11 @@ var hidden = document.querySelector(".hidden-box");
 more.addEventListener("touchstart",function(){
 	moreMask.style.display="block";
 	setTimeout(function(){
-		hidden.setAttribute("class","hidden-box active");
+		hidden.className="hidden-box active";
 	},1)
 })
 
 moreMask.addEventListener("touchstart",function(){
+	hidden.className="hidden-box";
 	moreMask.style.display="none";
-	hidden.removeAttribute("class","active");
 })

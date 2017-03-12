@@ -331,7 +331,6 @@ section.yy_list ul li .content .right img{
 	position:absolute;
 	top:0;left:0;right:0;bottom:0;
 	margin:auto;
-	transition:transform .5s;
 	transform:scale(0);
 }
 
@@ -359,5 +358,6 @@ section.yy_list ul li .content .right img{
 }
 
 .more-mask .hidden-box.active{
+	transition:transform .5s;
 	transform:scale(1);
 }
