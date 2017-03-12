@@ -17,3 +17,19 @@ mask.addEventListener("touchstart",function(){
 	side.style.left="-6.3rem";
 	mask.style.display="none";
 })
+
+var more = document.getElementById("more");
+var moreMask = document.querySelector(".more-mask");
+var hidden = document.querySelector(".hidden-box");
+
+more.addEventListener("touchstart",function(){
+	moreMask.style.display="block";
+	setTimeout(function(){
+		hidden.setAttribute("class","hidden-box active");
+	},1)
+})
+
+moreMask.addEventListener("touchstart",function(){
+	moreMask.style.display="none";
+	hidden.removeAttribute("class","active");
+})

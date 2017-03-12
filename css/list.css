@@ -315,3 +315,49 @@ section.yy_list ul li .content .right img{
   z-index: 2;
   display: none;
 }
+
+.more-mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;left:0;
+  z-index: 2;
+  display: none;
+  background-color:rgba(0,0,0,.5);
+}
+.more-mask .hidden-box{
+	width:5.36rem;
+	height:5.36rem;
+	position:absolute;
+	top:0;left:0;right:0;bottom:0;
+	margin:auto;
+	transition:transform .5s;
+	transform:scale(0);
+}
+
+.more-mask .hidden-box .links{
+	display:bolck;
+	width:2.63rem;
+	height:2.63rem;
+	background:red;
+	float:left;
+}
+.more-mask .hidden-box .links:nth-of-type(1){
+	background:url(../images/yy_effect_01.png)no-repeat center center/100%;
+	margin:0 0.1rem 0 0;
+}
+.more-mask .hidden-box .links:nth-of-type(2){
+	background:url(../images/yy_effect_02.png)no-repeat center center/100%;
+}
+.more-mask .hidden-box .links:nth-of-type(3){
+	background:url(../images/yy_effect_03.png)no-repeat center center/100%;
+	margin:.1rem .1rem 0 0;
+}
+.more-mask .hidden-box .links:nth-of-type(4){
+	background:url(../images/yy_effect_04.png)no-repeat center center/100%;
+	margin:.1rem 0 0 0;
+}
+
+.more-mask .hidden-box.active{
+	transform:scale(1);
+}
