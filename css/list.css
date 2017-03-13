@@ -276,6 +276,10 @@ section.yy_list ul li .content .right img{
   left: .69rem;
 }
 .left-box .item-box .item .item-name {
+  display:block;
+  width:100%;
+  height:100%;
+  line-height:.99rem;
   font-size: .34rem;
   color: #1D252D;
 }
