@@ -151,8 +151,11 @@ header span{
 }
 .lb-footer .lb-footer-con span a{
     color: #677c8e;
+    display: block;
+    width:100%;
+    height:100%;
 }
 .lb-footer .lb-footer-con .lb-footer-hover{
     font-size: 0.36rem;
-    color:#0f1b26;
+    color:#D0CE76;
 }

@@ -365,3 +365,34 @@ section.yy_list ul li .content .right img{
 	transition:transform .5s;
 	transform:scale(1);
 }
+/*底部*/
+.lb-footer{
+    width: 100%;
+    height: 0.98rem;
+    box-shadow: 0 0.15rem 0.9rem #ccc;
+    background: #fff;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.lb-footer .lb-footer-con{
+    width: 5.16rem;
+    margin: 0 auto;
+}
+.lb-footer .lb-footer-con span{
+    width: 33.3333%;
+    display: block;
+    float: left;
+    font-size: 0.26rem;
+    line-height: 0.98rem;
+    text-align: center;
+}
+.lb-footer .lb-footer-con span a{
+	display: block;
+	width:100%;
+	height:100%;
+    color: #677c8e;
+}
+.lb-footer .lb-footer-con .lb-footer-hover{
+    font-size: 0.36rem;
+    color:#D0CE76;
+}
