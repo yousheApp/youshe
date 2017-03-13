@@ -5,6 +5,7 @@
 var myself = document.querySelector(".self");
 var mask = document.querySelector(".mask");
 var side = document.querySelector(".left-box");
+var links = document.querySelectorAll(".links")
 
 myself.addEventListener("touchstart",function(){
 	side.style.transition="left .5s";
@@ -27,9 +28,4 @@ more.addEventListener("touchstart",function(){
 	setTimeout(function(){
 		hidden.className="hidden-box active";
 	},1)
-})
-
-moreMask.addEventListener("touchstart",function(){
-	hidden.className="hidden-box";
-	moreMask.style.display="none";
 })
