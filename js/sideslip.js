@@ -22,10 +22,22 @@ mask.addEventListener("touchstart",function(){
 var more = document.getElementById("more");
 var moreMask = document.querySelector(".more-mask");
 var hidden = document.querySelector(".hidden-box");
+var links = document.querySelectorAll(".links")
 
 more.addEventListener("touchstart",function(){
 	moreMask.style.display="block";
 	setTimeout(function(){
 		hidden.className="hidden-box active";
 	},1)
+})
+
+moreMask.addEventListener("touchstart",function(e){
+		hidden.className="hidden-box";
+		this.style.display="none";
+})
+
+links.forEach(function(ele,i,arr){
+	ele.addEventListener("touchstart",function(e){
+		e.stopPropagation() 
+	})
 })
