@@ -562,9 +562,15 @@
 <script src="js/sideslip.js"></script>
 <script src="js/swiper.min.js"></script>
     <script>
+    var box=document.querySelector('.yy_box');
+
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        paginationClickable: true
+        paginationClickable: true,
+        onSlideChangeStart: function(swiper){
+            box.scrollTop = 0
+        }
+
     });
 
     </script>
