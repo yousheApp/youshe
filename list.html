@@ -6,7 +6,7 @@
 	<meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <title>右设_yy</title>
+    <title>首页</title>
     <script src="js/rem.js"></script>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/list.css">
@@ -68,27 +68,42 @@
             </a>   
         </header>
         <!-- 选项 -->
-        <div class="yy_nav">
-            <div class="link-box">
-                <a href="">美食</a>
-                <span>·</span>
-                <a href="">旅游</a>
-                <span>·</span>
-                <a href="">艺术</a>
-                <span>·</span>
-                <a href="">教育</a>
-                <span>·</span>
-                <a href="">音乐</a>
+        <div class="swiper-container yy_nav" id="swiper-container2" style="width:480px;">
+            <div class="swiper-wrapper link-box">
+                <a class="swiper-slide active-nav">
+                    美食
+                    <span>·</span>
+                </a>
+
+                <a class="swiper-slide active-nav">
+                    旅游
+                    <span>·</span>
+                </a>
+
+                <a class="swiper-slide active-nav">
+                    艺术
+                    <span>·</span>
+                </a>
+
+                <a class="swiper-slide active-nav">
+                    教育
+                    <span>·</span>
+                </a>
+
+                <a class="swiper-slide active-nav">
+                    音乐
+                </a>
             </div>
         </div>
+
     </section>
     <!-- 头部结束 -->
     <!-- 列表 -->
     <div class="yy_box">
         <!-- 内容列表 -->
         <section class="yy_list">
-            <div class="swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-container" id="swiper-container3">
+        <div class="swiper-wrapper" >
             <div class="swiper-slide">
                 <ul>
                 <li>
@@ -563,15 +578,36 @@
 <script src="js/swiper.min.js"></script>
     <script>
     var box=document.querySelector('.yy_box');
-
-    var swiper = new Swiper('.swiper-container', {
+    var mySwiper2 = new Swiper('#swiper-container2',{
+        watchSlidesProgress : true,
+        watchSlidesVisibility : true,
+        slidesPerView :7,
+        onTap: function(){
+            mySwiper3.slideTo( mySwiper2.clickedIndex)
+        }
+    })
+    var mySwiper3 = new Swiper('#swiper-container3',{
         pagination: '.swiper-pagination',
         paginationClickable: true,
         onSlideChangeStart: function(swiper){
-            box.scrollTop = 0
+            box.scrollTop = 0;
+//            updateNavPosition()
         }
+    })
 
-    });
+//    function updateNavPosition(){
+//        $('#swiper-container2 .active-nav').removeClass('active-nav')
+//        var activeNav = $('#swiper-container2 .swiper-slide').eq(mySwiper3.activeIndex).addClass('active-nav');
+//        if (!activeNav.hasClass('swiper-slide-visible')) {
+//            if (activeNav.index()>mySwiper2.activeIndex) {
+//                var thumbsPerNav = Math.floor(mySwiper2.width/activeNav.width())-1
+//                mySwiper2.slideTo(activeNav.index()-thumbsPerNav)
+//            }
+//            else {
+//                mySwiper2.slideTo(activeNav.index())
+//            }
+//        }
+//    }
 
     </script>
 </html>
