@@ -110,13 +110,14 @@ header span{
 	width:auto;
 	height:0.88rem;
 	padding:0 0.2rem;
+
 }
 .yy_nav .link-box a{
 	font-size:12px;
 	color: #7D94A8;
 	display: block;
 	text-align: center;
-	width:1.22rem;
+	width:20%;
 	height: .88rem;
 	line-height: .88rem;
 	float: left;

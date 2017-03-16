@@ -1,4 +1,6 @@
-
+*{
+  box-sizing:border-box;
+}
 html,body{
    height:100%;
 }
@@ -94,16 +96,21 @@ section.main{
     flex-grow: 1;
 }
 .zwb-dk{
-	width: 7rem;
+	width: 100%;
 	height: auto;
-	margin: 0.24rem auto;
+	// margin: 0 auto;
+  // overflow:hidden;
   position: relative;
 }
 .zwb-dk li{
-  width:3.4rem;
+  width:49.9%;
   height:auto;
-  float: left;
-  position: absolute;
+  overflow:hidden;
+  padding:.1rem;
+  float:left;
+  border-radius:.15rem;
+  // float: left;
+  // position: absolute;
 }
 .zwb-dk li .wb-imgbox{
   width:100%;

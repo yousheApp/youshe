@@ -68,7 +68,7 @@
             </a>   
         </header>
         <!-- 选项 -->
-        <div class="swiper-container yy_nav" id="swiper-container2" style="width:480px;">
+        <div class="swiper-container yy_nav" id="swiper-container2">
             <div class="swiper-wrapper link-box">
                 <a class="swiper-slide active-nav">
                     美食
@@ -581,7 +581,7 @@
     var mySwiper2 = new Swiper('#swiper-container2',{
         watchSlidesProgress : true,
         watchSlidesVisibility : true,
-        slidesPerView :7,
+        slidesPerView :5,
         onTap: function(){
             mySwiper3.slideTo( mySwiper2.clickedIndex)
         }
